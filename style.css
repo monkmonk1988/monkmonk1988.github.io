@@ -61,3 +61,6 @@ footer {
 footer a {
   color: white;
 }
+footer p {
+  margin-bottem: 8px;
+}
