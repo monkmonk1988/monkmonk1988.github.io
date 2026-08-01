@@ -14,86 +14,110 @@
       <section id="projekte">
         <h2>Projekte</h2>
 
-        <div class="karte">
-          <h3>Preisverfolger</h3>
-          <p>
-            Python-Tool das Buchtitel und Preise von Webseiten scraped und in
-            eine CSV speichert.
-          </p>
-          <a
-            href="https://github.com/monkmonk1988/Python-preisverfolger"
-            target="_blank"
-            >GitHub Repository</a
-          >
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="aktuell">Aktuelle Projekte</button>
+          <button class="tab-btn" data-tab="anfaenge">Anfänge</button>
         </div>
 
-        <div class="karte">
-          <h3>Todoliste Python</h3>
-          <p>Python-Tool Todoliste mit tkinter und json.</p>
-          <a
-            href="https://github.com/monkmonk1988/Python-todoliste"
-            target="_blank"
-            >GitHub Repository</a
-          >
+        <div class="tab-content active" id="aktuell">
+          <div class="karte">
+            <h3>Vorratskammer</h3>
+            <p>
+              Backend-API zur Verwaltung von Inventar mit frei wählbaren
+              Lagerorten (z.B. Keller, Kühlschrank, Gefrierschrank) und
+              MHD-Erinnerung. Node.js, Express, SQLite, JWT-Authentifizierung,
+              automatischer Ablauf-Check via node-cron.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/Vorratskammer"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Preisverfolger</h3>
+            <p>
+              Python-Tool das Buchtitel und Preise von Webseiten scraped und in
+              eine CSV speichert.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/Python-preisverfolger"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
         </div>
 
-        <div class="karte">
-          <h3>Tic Tac Toe</h3>
-          <p>Python-Tool zum Spielen von Tic Tac Toe.</p>
-          <a
-            href="https://github.com/monkmonk1988/python-tik-tak-to"
-            target="_blank"
-            >GitHub Repository</a
-          >
-        </div>
+        <div class="tab-content" id="anfaenge">
+          <div class="karte">
+            <h3>Todoliste Python</h3>
+            <p>Python-Tool Todoliste mit tkinter und json.</p>
+            <a
+              href="https://github.com/monkmonk1988/Python-todoliste"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
 
-        <div class="karte">
-          <h3>Zahlenraten</h3>
-          <p>
-            Python-Tool zum Raten von Zahlen mit mehreren Schwierigkeitsgraden,
-            Versuchen, Highscores.
-          </p>
-          <a
-            href="https://github.com/monkmonk1988/python-zahlenraten"
-            target="_blank"
-            >GitHub Repository</a
-          >
-        </div>
+          <div class="karte">
+            <h3>Tic Tac Toe</h3>
+            <p>Python-Tool zum Spielen von Tic Tac Toe.</p>
+            <a
+              href="https://github.com/monkmonk1988/python-tik-tak-to"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
 
-        <div class="karte">
-          <h3>Jump & Run</h3>
-          <p>
-            Browser-Game in purem Javascript mit HTML5 Canvas. Plattform,
-            Schwerkraft, Punktestand.
-          </p>
-          <a
-            href="https://github.com/monkmonk1988/JavaScript-Jump---Run"
-            target="_blank"
-            >GitHub Repository</a
-          >
-        </div>
+          <div class="karte">
+            <h3>Zahlenraten</h3>
+            <p>
+              Python-Tool zum Raten von Zahlen mit mehreren Schwierigkeitsgraden,
+              Versuchen, Highscores.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/python-zahlenraten"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
 
-        <div class="karte">
-          <h3>Todo Liste JavaScript</h3>
-          <p>Eine einfache Todo-Liste erstellt mit JavaScript und HTML.</p>
-          <a
-            href="https://github.com/monkmonk1988/todoliste-im-JS"
-            target="_blank"
-            >GitHub Repository</a
-          >
-        </div>
+          <div class="karte">
+            <h3>Jump & Run</h3>
+            <p>
+              Browser-Game in purem Javascript mit HTML5 Canvas. Plattform,
+              Schwerkraft, Punktestand.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/JavaScript-Jump---Run"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
 
-        <div class="karte">
-          <h3>Taschenrechner JavaScript</h3>
-          <p>
-            Eine einfache Taschenrechner-App, die mit JavaScript und HTML
-            erstellt wurde.
-          </p>
-          <a
-            href="https://github.com/monkmonk1988/JS-Taschenrechner/tree/main"
-            target="_blank"
-            >GitHub Repository</a
-          >
+          <div class="karte">
+            <h3>Todo Liste JavaScript</h3>
+            <p>Eine einfache Todo-Liste erstellt mit JavaScript und HTML.</p>
+            <a
+              href="https://github.com/monkmonk1988/todoliste-im-JS"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Taschenrechner JavaScript</h3>
+            <p>
+              Eine einfache Taschenrechner-App, die mit JavaScript und HTML
+              erstellt wurde.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/JS-Taschenrechner/tree/main"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
         </div>
       </section>
       <section id="ueber-mich">
@@ -116,5 +140,21 @@
         <p>&copy; 2026 Benjamin Arndt. Alle Rechte vorbehalten.</p>
       </footer>
     </main>
+
+    <script>
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.remove("active"));
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((c) => c.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>
