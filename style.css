@@ -26,6 +26,33 @@ main {
 h2 {
   margin-bottom: 20px;
 }
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.tab-btn:hover {
+  color: #555;
+}
+.tab-btn.active {
+  background-color: #222;
+  color: white;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
 .karte {
   padding: 20px;
   background-color: white;
@@ -62,5 +89,5 @@ footer a {
   color: white;
 }
 footer p {
-  margin-bottem: 8px;
+  margin-bottom: 8px;
 }
