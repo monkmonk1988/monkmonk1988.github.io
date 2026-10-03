@@ -8,7 +8,7 @@
   <body>
     <header>
       <h1>Benjamin Arndt</h1>
-      <p>Softwareentwickler | Webentwickler | Technologie-Enthusiast</p>
+      <p>Angehender Fachinformatiker | Backend-Entwicklung</p>
     </header>
     <main>
       <section id="projekte">
@@ -16,7 +16,7 @@
 
         <div class="tabs">
           <button class="tab-btn active" data-tab="aktuell">Aktuelle Projekte</button>
-          <button class="tab-btn" data-tab="anfaenge">Anfänge</button>
+          <button class="tab-btn" data-tab="anfaenge">Übungsprojekte</button>
         </div>
 
         <div class="tab-content active" id="aktuell">
@@ -26,7 +26,9 @@
               Backend-API für einen Blog mit rollenbasierter Zugriffskontrolle
               (Admin/User). Node.js, Express, SQLite, JWT-Authentifizierung mit
               Rollen im Token, Middleware zur Rechteprüfung. Vollständiges
-              CRUD für Artikel und Kommentare mit Ownership-Logik.
+              CRUD für Artikel und Kommentare mit Ownership-Logik, Bild-Upload,
+              Pagination und Suche, Rate-Limiting, 9 automatisierte Tests
+              (Jest/Supertest) und ein einfaches Frontend ohne Framework.
             </p>
             <a
               href="https://github.com/monkmonk1988/blog-api"
@@ -40,7 +42,8 @@
               Backend-API zur Verwaltung von Inventar mit frei wählbaren
               Lagerorten (z.B. Keller, Kühlschrank, Gefrierschrank) und
               MHD-Erinnerung. Node.js, Express, SQLite, JWT-Authentifizierung,
-              automatischer Ablauf-Check via node-cron.
+              bcrypt, automatischer Ablauf-Check via node-cron mit
+              E-Mail-Benachrichtigung (nodemailer, bisher mit Testkonto).
             </p>
             <a
               href="https://github.com/monkmonk1988/Vorratskammer"
@@ -52,8 +55,9 @@
           <div class="karte">
             <h3>Preisverfolger</h3>
             <p>
-              Python-Tool das Buchtitel und Preise von Webseiten scraped und in
-              eine CSV speichert.
+              Python-Tool (requests, BeautifulSoup), das Buchtitel und Preise
+              von einer Webseite ausliest und in eine CSV speichert. Mit
+              Fehlerbehandlung für Netzwerkfehler und ungültige URLs.
             </p>
             <a
               href="https://github.com/monkmonk1988/Python-preisverfolger"
@@ -98,7 +102,7 @@
           </div>
 
           <div class="karte">
-            <h3>Jump & Run</h3>
+            <h3>Jump &amp; Run</h3>
             <p>
               Browser-Game in purem Javascript mit HTML5 Canvas. Plattform,
               Schwerkraft, Punktestand.
@@ -137,19 +141,18 @@
       <section id="ueber-mich">
         <h2>Über mich</h2>
         <p>
-          Ich lerne seit Anfang 2026 programmieren und habe seitdem mehrere
-          kleine Projekte in Python und JavaScript umgesetzt. Ich suche erste
-          Aufträge um praktische Erfahrung zu sammeln.
+          Ich komme aus dem Objektschutz und qualifiziere mich seit Anfang 2026
+          für die IT um. Mein Schwerpunkt ist Backend-Entwicklung mit Node.js
+          und Python. Ich suche einen Ausbildungsplatz zum Fachinformatiker.
         </p>
         <p>
-          Zertifikate: Mimoapp Kurse (Python, JavaScript/TypeScript, SQL, React, Full-Stack)
+          Zertifikate: Mimo-Kurse 2026 (Python, JavaScript, TypeScript, HTML, CSS, React, SQL, Front-End, Back-End, Full-Stack)
         </p>
       </section>
       <footer>
         <p>
-          Kontakt: monkarndt@googlemail.com | Github
+          Kontakt: monkarndt@gmail.com | Github
           <a href="https://github.com/monkmonk1988" target="_blank">monkmonk1988</a>
-          Fiverr: <a href="http://www.fiverr.com/s/38D0k7Y" target="_blank">monkmonk88</a>
         </p>
         <p>&copy; 2026 Benjamin Arndt. Alle Rechte vorbehalten.</p>
       </footer>
