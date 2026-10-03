@@ -1,93 +1,177 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
-header {
-  background-color: #222;
-  color: white;
-  padding: 40px;
-  text-align: center;
-}
-header p {
-  margin-top: 10px;
-  color: #aaa;
-}
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-h2 {
-  margin-bottom: 20px;
-}
-.tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.tab-btn {
-  padding: 10px 20px;
-  border: none;
-  background-color: white;
-  color: #333;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.tab-btn:hover {
-  color: #555;
-}
-.tab-btn.active {
-  background-color: #222;
-  color: white;
-}
-.tab-content {
-  display: none;
-}
-.tab-content.active {
-  display: block;
-}
-.karte {
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-}
-.karte a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #222;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid #555;
-}
-.karte a:hover {
-  color: #555;
-  border-color: #555;
-}
-#ueber-mich {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-#ueber-mich p {
-  margin-top: 10px;
-}
-footer {
-  background-color: #222;
-  color: #aaa;
-  text-align: center;
-  padding: 20px;
-  margin-top: 60px;
-}
-footer a {
-  color: white;
-}
-footer p {
-  margin-bottom: 8px;
-}
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Benjamin Arndt - Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>Benjamin Arndt</h1>
+      <p>Angehender Fachinformatiker | Backend-Entwicklung</p>
+    </header>
+    <main>
+      <section id="projekte">
+        <h2>Projekte</h2>
+
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="aktuell">Aktuelle Projekte</button>
+          <button class="tab-btn" data-tab="anfaenge">Übungsprojekte</button>
+        </div>
+
+        <div class="tab-content active" id="aktuell">
+          <div class="karte">
+            <h3>Blog-API</h3>
+            <p>
+              Backend-API für einen Blog mit rollenbasierter Zugriffskontrolle
+              (Admin/User). Node.js, Express, SQLite, JWT-Authentifizierung mit
+              Rollen im Token, Middleware zur Rechteprüfung. Vollständiges
+              CRUD für Artikel und Kommentare mit Ownership-Logik, Bild-Upload,
+              Pagination und Suche, Rate-Limiting, 9 automatisierte Tests
+              (Jest/Supertest) und ein einfaches Frontend ohne Framework.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/blog-api"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+          <div class="karte">
+            <h3>Vorratskammer</h3>
+            <p>
+              Backend-API zur Verwaltung von Inventar mit frei wählbaren
+              Lagerorten (z.B. Keller, Kühlschrank, Gefrierschrank) und
+              MHD-Erinnerung. Node.js, Express, SQLite, JWT-Authentifizierung,
+              bcrypt, automatischer Ablauf-Check via node-cron mit
+              E-Mail-Benachrichtigung (nodemailer, bisher mit Testkonto).
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/Vorratskammer"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Preisverfolger</h3>
+            <p>
+              Python-Tool (requests, BeautifulSoup), das Buchtitel und Preise
+              von einer Webseite ausliest und in eine CSV speichert. Mit
+              Fehlerbehandlung für Netzwerkfehler und ungültige URLs.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/Python-preisverfolger"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+        </div>
+
+        <div class="tab-content" id="anfaenge">
+          <div class="karte">
+            <h3>Todoliste Python</h3>
+            <p>Python-Tool Todoliste mit tkinter und json.</p>
+            <a
+              href="https://github.com/monkmonk1988/Python-todoliste"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Tic Tac Toe</h3>
+            <p>Python-Tool zum Spielen von Tic Tac Toe.</p>
+            <a
+              href="https://github.com/monkmonk1988/python-tik-tak-to"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Zahlenraten</h3>
+            <p>
+              Python-Tool zum Raten von Zahlen mit mehreren Schwierigkeitsgraden,
+              Versuchen, Highscores.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/python-zahlenraten"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Jump &amp; Run</h3>
+            <p>
+              Browser-Game in purem Javascript mit HTML5 Canvas. Plattform,
+              Schwerkraft, Punktestand.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/JavaScript-Jump---Run"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Todo Liste JavaScript</h3>
+            <p>Eine einfache Todo-Liste erstellt mit JavaScript und HTML.</p>
+            <a
+              href="https://github.com/monkmonk1988/todoliste-im-JS"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+
+          <div class="karte">
+            <h3>Taschenrechner JavaScript</h3>
+            <p>
+              Eine einfache Taschenrechner-App, die mit JavaScript und HTML
+              erstellt wurde.
+            </p>
+            <a
+              href="https://github.com/monkmonk1988/JS-Taschenrechner/tree/main"
+              target="_blank"
+              >GitHub Repository</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="ueber-mich">
+        <h2>Über mich</h2>
+        <p>
+          Ich komme aus dem Objektschutz und qualifiziere mich seit Anfang 2026
+          für die IT um. Mein Schwerpunkt ist Backend-Entwicklung mit Node.js
+          und Python. Ich suche einen Ausbildungsplatz zum Fachinformatiker.
+        </p>
+        <p>
+          Zertifikate: Mimo-Kurse 2026 (Python, JavaScript, TypeScript, HTML, CSS, React, SQL, Front-End, Back-End, Full-Stack)
+        </p>
+      </section>
+      <footer>
+        <p>
+          Kontakt: monkarndt@gmail.com | Github
+          <a href="https://github.com/monkmonk1988" target="_blank">monkmonk1988</a>
+        </p>
+        <p>&copy; 2026 Benjamin Arndt. Alle Rechte vorbehalten.</p>
+      </footer>
+    </main>
+
+    <script>
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.remove("active"));
+          document
+            .querySelectorAll(".tab-content")
+            .forEach((c) => c.classList.remove("active"));
+
+          btn.classList.add("active");
+          document.getElementById(btn.dataset.tab).classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
